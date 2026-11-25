@@ -24,6 +24,8 @@ All labs use one shared environment, created by Module 1 lab M01-L01.
 | `SMPE.LAB.AXYZMAC`, `AXYZSRC` | PDSE (distribution libraries) | `M01L01-ALLOCLIB` |
 | `SMPE.LAB.SMPPTFIN` | PDS, FB 80 (SYSMOD packages) | `M01L01-ALLOCLIB` |
 | `SMPE.LAB.PROCLIB` | PDS, FB 80 (holds `SMPPROC`) | `M01L01-ALLOCLIB` |
+| `SMPE.LAB.JCL` | PDS, FB 80 (lab job members from `labs/*/jcl`) | `M01L01-ALLOCLIB` |
+| `SMPE.LAB.EXEC` | PDS, FB 80 (REXX members from `rexx/`) | `M01L01-ALLOCLIB` |
 | `SMPE.LAB.SMPLOG`, `SMPLOGA` | Sequential | Allocate to site standards (not created by the lab jobs) |
 
 ## Zones and DDDEFs

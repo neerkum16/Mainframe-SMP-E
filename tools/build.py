@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Expand include markers in articles/*.md into dist/*.md.
+"""Expand include markers in articles/*.md into book/*.md.
 
 Include marker (on its own line):   <!-- include: labs/m01/jcl/FILE.jcl -->
 Sources marker (on its own line):   <!-- sources -->
@@ -86,7 +86,7 @@ def build_article(src, manifest, errors):
 def main():
     manifest = load_manifest()
     errors = []
-    dist = ROOT / 'dist'
+    dist = ROOT / 'book'
     dist.mkdir(exist_ok=True)
     for old in dist.glob('*.md'):
         old.unlink()
@@ -97,7 +97,7 @@ def main():
     if errors:
         print('\n'.join(errors), file=sys.stderr)
         return 1
-    print('built %d article(s) into dist/' % len(articles))
+    print('built %d article(s) into book/' % len(articles))
     return 0
 
 

@@ -2,6 +2,8 @@
 module: 1
 title: SMP/E Overview
 status: draft
+unverified_topics:
+  - System Generation
 smpe_release: "SMP/E V3R7 (z/OS 3.2 documentation, SA23-2277-70)"
 last_verified: null
 objectives:
@@ -498,7 +500,8 @@ Minimum DDs:
 | `SMPCSI` | The CSI holding the global zone (`DISP=SHR`) |
 | `SMPCNTL` | SMP/E commands |
 | `SMPOUT`, `SMPRPT`, `SMPLIST`, `SMPSNAP`, `SMPDEBUG` | Output |
-| `SMPPTFIN`, `SMPHOLD` | Input for RECEIVE, when used |
+| `SMPPTFIN`, `SMPHOLD` | Input for RECEIVE; both DDs are required for RECEIVE, and `SMPHOLD` may be `DUMMY` |
+| `SMPPUNCH` | Output for GENERATE, REPORT and UNLOAD |
 | `SMPWRK1`-`SMPWRK6`, `SYSUT1`-`SYSUT4` | Work files, usually supplied by DDDEF entries |
 
 Other DDs (PTS, SCDS, LOG, library DDs) are normally supplied through DDDEF entries in the zones, not in the JCL.
@@ -517,7 +520,7 @@ Three ways to invoke:
 flowchart TD
     A[Need to run SMP/E] --> B{How?}
     B -->|Batch JCL| C[EXEC PGM=GIMSMP or cataloged procedure]
-    B -->|Interactive| D[ISPF SMP/E dialogs - GIMDTS]
+    B -->|Interactive| D[ISPF SMP/E dialogs]
     B -->|Program or script| E[Generate JCL and submit - REXX]
     C --> F[Read SMPOUT, SMPRPT]
     D --> F

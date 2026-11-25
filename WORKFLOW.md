@@ -12,7 +12,7 @@ labs/expected/       expected SMPOUT excerpts, added when a lab has been run
 labs/manifest.json   every code file: member name, lab, verification status
 rexx/                shared REXX utilities
 tools/               build and check scripts
-dist/                generated articles (not committed)
+book/                generated readable articles (committed, never edited by hand)
 coverage-matrix.md   generated
 ```
 
@@ -119,7 +119,7 @@ Automated (run in CI and before every pull request):
 | `tools/check_code.py` | Manifest completeness, ASCII, tabs, 80 columns, JCL names, REXX header, member names, include targets |
 | `tools/check_coverage.py --write` | Front matter and H2s match `curriculum.md`, lab headings match front matter, regenerates `coverage-matrix.md` |
 | `tools/check_mermaid.py` | Every Mermaid block renders with `mmdc` |
-| `tools/build.py` | Includes resolve and `dist/` builds |
+| `tools/build.py` | Includes resolve and `book/` builds; CI fails if the committed `book/` is out of date |
 
 Manual (reviewer):
 

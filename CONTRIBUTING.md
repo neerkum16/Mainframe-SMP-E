@@ -4,11 +4,12 @@
 
 - Work on a branch per module: `m02-receive`, `m03-apply`, and so on.
 - Open one pull request per module into `main`.
-- Do not commit generated output (`dist/`) or client material (`host_on_demand_contents.md`).
+- Commit the regenerated `book/` and `coverage-matrix.md` with every article or code change; never edit them by hand.
+- Do not commit client material (`host_on_demand_contents.md`).
 
 ## Before opening a pull request
 
-Run all four checks and commit the regenerated `coverage-matrix.md`:
+Run all four checks and commit the regenerated `book/` and `coverage-matrix.md`:
 
 ```
 python tools/check_code.py

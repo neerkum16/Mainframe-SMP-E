@@ -9,5 +9,5 @@
     "MD041": false,
     "MD060": false
   },
-  "ignores": ["dist/**", "node_modules/**", "curriculum.md"]
+  "ignores": ["book/**", "node_modules/**", "curriculum.md"]
 }

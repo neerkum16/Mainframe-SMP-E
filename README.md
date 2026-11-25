@@ -12,23 +12,23 @@ Course material for system programmers who install products and service with SMP
 | `rexx/` | REXX utilities used across modules |
 | `tools/` | Build and check scripts |
 | `coverage-matrix.md` | Generated traceability from curriculum to article sections |
-| `dist/` | Generated, readable articles with code expanded (not committed) |
+| `book/` | Generated, readable articles with code expanded (committed; do not edit by hand) |
 
 ## Reading the course
 
-The files in `articles/` contain include markers instead of code. Build the readable version:
+The files in `articles/` are the source and contain include markers instead of code. The readable version, with all code expanded, is in `book/` and is read directly on GitHub. Regenerate it after any change to an article or a code file:
 
 ```
 pip install pyyaml
 python tools/build.py
 ```
 
-Read the files in `dist/`. CI publishes `dist/` as a build artifact on every push.
+CI fails if `book/` does not match what the build produces.
 
 ## Running the labs
 
 1. Allocate and initialize the environment with Module 1, lab M01-L01 (`labs/env/lab-environment.md`).
-2. Upload code files to z/OS as members of a PDS. The member name for each file is in `labs/manifest.json` (field `member`), not the repository file name.
+2. Upload code files to z/OS as members. The member name for each file is in `labs/manifest.json` (field `member`), not the repository file name. JCL goes to `SMPE.LAB.JCL`, `.mcs` files to `SMPE.LAB.SMPPTFIN`, REXX to `SMPE.LAB.EXEC`.
 3. Edit the placeholders (`&VOL`, job card) for your site.
 4. Run the lab and compare with `labs/expected/` when a file exists there.
 

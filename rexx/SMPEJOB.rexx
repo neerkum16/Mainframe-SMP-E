@@ -22,6 +22,7 @@ jcl.10 = '  SET BDY('zone') .'
 jcl.11 = '  'cmd
 jcl.12 = '/*'
 jcl.0  = 12
+"DELETE '"tmp"'"
 "ALLOC F(SMPJCL) DA('"tmp"') NEW CATALOG REUSE",
       "RECFM(F B) LRECL(80) BLKSIZE(3120) SPACE(1 1) TRACKS"
 "EXECIO" jcl.0 "DISKW SMPJCL (STEM jcl. FINIS)"
