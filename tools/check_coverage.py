@@ -91,6 +91,7 @@ def main(write):
             continue
         p, meta, sections, labs = articles[n]
         where = p.name
+        earlier_labs = {l['id'] for k, a in articles.items() if k < n for l in (a[1].get('labs') or [])}
         if meta.get('title') != mod['title']:
             errors.append('%s: title %r != curriculum %r' % (where, meta.get('title'), mod['title']))
         if meta.get('subtopics') != mod['subtopics']:
@@ -112,10 +113,12 @@ def main(write):
         seen = set()
         for l in meta.get('labs', []):
             for d in l.get('depends_on', []):
-                if d not in seen and d not in {x for x in lab_ids}:
-                    errors.append('%s: %s depends on unknown lab %s' % (where, l['id'], d))
-                elif d not in seen:
+                if d in seen or d in earlier_labs:
+                    continue
+                if d in lab_ids:
                     errors.append('%s: %s depends on later lab %s' % (where, l['id'], d))
+                else:
+                    errors.append('%s: %s depends on unknown lab %s' % (where, l['id'], d))
             seen.add(l['id'])
         rows.append('Article: `articles/%s` - status: %s - sources last verified: %s\n'
                     % (p.name, meta.get('status'), meta.get('last_verified') or 'not yet'))

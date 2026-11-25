@@ -28,7 +28,7 @@ CI fails if `book/` does not match what the build produces.
 ## Running the labs
 
 1. Allocate and initialize the environment with Module 1, lab M01-L01 (`labs/env/lab-environment.md`).
-2. Upload code files to z/OS as members. The member name for each file is in `labs/manifest.json` (field `member`), not the repository file name. JCL goes to `SMPE.LAB.JCL`, `.mcs` files to `SMPE.LAB.SMPPTFIN`, REXX to `SMPE.LAB.EXEC`.
+2. Upload code files to z/OS as members. The member name for each file is in `labs/manifest.json` (field `member`), not the repository file name. JCL goes to `SMPE.LAB.JCL`, `.mcs` files to `SMPE.LAB.SMPPTFIN`, REXX to `SMPE.LAB.EXEC`, `.smpcntl` files to `SMPE.LAB.SMPCNTL` (created in Module 2).
 3. Edit the placeholders (`&VOL`, job card) for your site.
 4. Run the lab and compare with `labs/expected/` when a file exists there.
 

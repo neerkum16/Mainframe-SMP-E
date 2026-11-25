@@ -98,6 +98,7 @@ Body:
 - Real IBM product examples (CICS, Db2, etc.) appear in Module 7 as procedures using `RECEIVE ORDER`, `FIXCAT`, and `REPORT MISSINGFIX`, not as runnable labs.
 - File names: `MNNLNN-MEMBER.ext` for lab code, `MEMBER.ext` for shared code, where `MEMBER` is the z/OS member name (1 to 8 characters, `A-Z 0-9 @ # $`). Extensions: `.jcl`, `.mcs` (MCS packages for `SMPPTFIN`), `.smpcntl` (SMP/E commands for `SMPCNTL`), `.rexx`.
 - Every code file is ASCII, has no tabs, and has no line over 80 columns.
+- Member names are unique per kind (JCL, MCS, SMP/E command input, REXX) across all modules, except procedures under `labs/env/proc/`.
 - Every code file has an entry in `labs/manifest.json`. `verified` stays `false` until someone has run the file on z/OS and recorded `verified_on`, `verified_by` and `zos_release`.
 - Placeholders are written `&VOL` and the job card is `ACCT`; each file's article text says what to replace.
 
@@ -107,6 +108,7 @@ Body:
 |---|---|---|
 | `SMPEJOB` | Module 1 | Build and submit a one-step GIMSMP job for a zone and command |
 | `SMPESCAN` | Module 1 | Scan SMPOUT for GIM messages, severity counts, highest return code |
+| `SMPEMCS` | Module 2 | Pre-check an MCS member: statement periods, 7-character IDs, `++VER` present |
 | `SMPEHOLD` | Module 5 | Extract error and system holds from REPORT output |
 | `SMPEPREQ` | Module 5 | Summarize unresolved prerequisite and requisite conditions |
 

@@ -25,7 +25,36 @@ Labs: M01-L01 (Allocate the lab environment), M01-L02 (Install the function), M0
 
 ## Module 2: RECEIVE Processing
 
-Not yet built (24 sub-topics).
+Article: `articles/02-receive-processing.md` - status: draft - sources last verified: not yet
+
+| # | Curriculum sub-topic | Article section | Diagrams | Code files | Inline blocks |
+|---|---|---|---|---|---|
+| 1 | The RECEIVE process | The RECEIVE process | 1 | 0 | 0 |
+| 2 | Modification Control Statements | Modification Control Statements | 1 | 2 | 0 |
+| 3 | MCS: header statement functions, software environment statement | MCS: header statement functions, software environment statement | 0 | 0 | 2 |
+| 4 | The Global Zone definition entry | The Global Zone definition entry | 1 | 0 | 0 |
+| 5 | GZONE entry example | GZONE entry example | 0 | 0 | 1 |
+| 6 | Global Zone options entry | Global Zone options entry | 0 | 0 | 0 |
+| 7 | options entry example | options entry example | 0 | 1 | 0 |
+| 8 | Global Zone utility entry | Global Zone utility entry | 0 | 0 | 0 |
+| 9 | Utility entry example | Utility entry example | 0 | 1 | 0 |
+| 10 | SMP/E allocation | SMP/E allocation | 0 | 1 | 0 |
+| 11 | Global Zone DDDEF entry | Global Zone DDDEF entry | 0 | 0 | 0 |
+| 12 | DDDEF entry example | DDDEF entry example | 0 | 1 | 0 |
+| 13 | Review of Global Zone entries | Review of Global Zone entries | 1 | 0 | 0 |
+| 14 | Creating Global Zone entries – UCLIN | Creating Global Zone entries – UCLIN | 0 | 1 | 0 |
+| 15 | Relative file packaged tapes | Relative file packaged tapes | 1 | 3 | 0 |
+| 16 | Receive processing | Receive processing | 1 | 0 | 0 |
+| 17 | Global Zone sysmod entry example | Global Zone sysmod entry example | 0 | 0 | 1 |
+| 18 | Exception sysmods | Exception sysmods | 0 | 0 | 0 |
+| 19 | Held sysmod entry example | Held sysmod entry example | 0 | 2 | 0 |
+| 20 | Holdddata example | HOLDDATA example | 0 | 1 | 1 |
+| 21 | tTe RECEIVE command | The RECEIVE command | 0 | 0 | 2 |
+| 22 | Sysmod entry with SOURCEID example | Sysmod entry with SOURCEID example | 1 | 1 | 0 |
+| 23 | REPORT SOURCEID output examples | REPORT SOURCEID output examples | 0 | 1 | 0 |
+| 24 | SMP/E dialogs primary option menu & query selection menus | SMP/E dialogs primary option menu & query selection menus | 1 | 0 | 0 |
+
+Labs: M02-L01 (Define the global zone entries), M02-L02 (Receive PTFs and assign SOURCEIDs), M02-L03 (Receive HOLDDATA and find the exception SYSMODs), M02-L04 (Receive a RELFILE-packaged function), M02-L05 (Diagnose SYSMODs that RECEIVE refuses), M02-L06 (Query the global zone with the SMP/E dialogs)
 
 ## Module 3: APPLY Processing
 

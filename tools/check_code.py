@@ -64,8 +64,8 @@ def check_file(rel, errors):
         for n, line in enumerate(lines, 1):
             if line.startswith('//') and not line.startswith('//*'):
                 name = JCL_NAME.match(line).group(1)
-                if len(name) > 8:
-                    errors.append('%s:%d: JCL name %r longer than 8' % (rel, n, name))
+                if any(len(part) > 8 for part in name.split('.')):
+                    errors.append('%s:%d: JCL name %r has a part longer than 8' % (rel, n, name))
     if suffix == '.rexx':
         if not (lines[0].startswith('/*') and 'REXX' in lines[0]):
             errors.append('%s:1: first line must be a comment containing REXX' % rel)
@@ -100,10 +100,11 @@ def main():
             errors.append('manifest: %s refers to unknown lab %s' % (rel, e['lab']))
         if e['verified'] and not (e['verified_on'] and e['verified_by'] and e['zos_release']):
             errors.append('manifest: %s is verified but lacks date, person or z/OS release' % rel)
-        members.setdefault((Path(rel).parent.as_posix(), e['member']), []).append(rel)
+        if not rel.startswith('labs/env/proc/'):
+            members.setdefault((e['kind'], e['member']), []).append(rel)
     for key, rels in members.items():
         if len(rels) > 1:
-            errors.append('manifest: duplicate member %s in %s: %s' % (key[1], key[0], rels))
+            errors.append('manifest: %s member %s is used by more than one file: %s' % (key[0], key[1], rels))
     for a in sorted((ROOT / 'articles').glob('*.md')):
         in_fence = False
         for n, line in enumerate(a.read_text().split('\n'), 1):
