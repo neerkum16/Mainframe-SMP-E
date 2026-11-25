@@ -1,0 +1,142 @@
+[
+  {
+    "path": "labs/env/proc/SMPPROC.jcl",
+    "kind": "jcl",
+    "member": "SMPPROC",
+    "lab": null,
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m01/jcl/M01-RUNPROC.jcl",
+    "kind": "jcl",
+    "member": "RUNPROC",
+    "lab": null,
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m01/jcl/M01L01-ALLOCCSI.jcl",
+    "kind": "jcl",
+    "member": "ALLOCCSI",
+    "lab": "M01-L01",
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m01/jcl/M01L01-ALLOCLIB.jcl",
+    "kind": "jcl",
+    "member": "ALLOCLIB",
+    "lab": "M01-L01",
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m01/jcl/M01L01-DDDEFS.jcl",
+    "kind": "jcl",
+    "member": "DDDEFS",
+    "lab": "M01-L01",
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m01/jcl/M01L02-INSTALL.jcl",
+    "kind": "jcl",
+    "member": "INSTALL",
+    "lab": "M01-L02",
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m01/mcs/HXYZ110.mcs",
+    "kind": "mcs",
+    "member": "HXYZ110",
+    "lab": null,
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m01/mcs/UA00001.mcs",
+    "kind": "mcs",
+    "member": "UA00001",
+    "lab": null,
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m01/mcs/UM00001.mcs",
+    "kind": "mcs",
+    "member": "UM00001",
+    "lab": null,
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m01/uclin/M01L01-VERIFY.smpcntl",
+    "kind": "smpcntl",
+    "member": "VERIFY",
+    "lab": "M01-L01",
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m01/uclin/M01L01-ZONES.smpcntl",
+    "kind": "smpcntl",
+    "member": "ZONES",
+    "lab": "M01-L01",
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m01/uclin/M01L04-REJECT.smpcntl",
+    "kind": "smpcntl",
+    "member": "REJECT",
+    "lab": "M01-L04",
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "rexx/SMPEJOB.rexx",
+    "kind": "rexx",
+    "member": "SMPEJOB",
+    "lab": null,
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "rexx/SMPESCAN.rexx",
+    "kind": "rexx",
+    "member": "SMPESCAN",
+    "lab": null,
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  }
+]

@@ -1,10 +1,11 @@
-build/
-real-sysout/
-secrets/
-*.env
-.DS_Store
-Thumbs.db
-*.swp
-.vscode/
-.idea/
-*.tmp
+# generated
+dist/
+__pycache__/
+*.pyc
+
+# client material, never commit
+host_on_demand_contents.md
+
+# local scratch
+.scratch/
+*.svg

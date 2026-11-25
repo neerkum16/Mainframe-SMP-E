@@ -1,0 +1,15 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+
+[*.{jcl,mcs,smpcntl,rexx}]
+charset = latin1
+max_line_length = 80
+trim_trailing_whitespace = false
+
+[*.md]
+trim_trailing_whitespace = false
