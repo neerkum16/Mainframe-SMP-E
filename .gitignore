@@ -8,3 +8,4 @@ host_on_demand_contents.md
 # local scratch
 .scratch/
 *.svg
+dist/
