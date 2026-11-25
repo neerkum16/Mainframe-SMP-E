@@ -550,7 +550,7 @@ Run a command through the procedure:
 //SMPEJOB  JOB (ACCT),'SMPE',CLASS=A,MSGCLASS=H
 //         JCLLIB ORDER=SMPE.LAB.PROCLIB
 //RUN      EXEC SMPPROC
-//SMPCNTL  DD *
+//SMP.SMPCNTL DD *
   SET BDY(GLOBAL) .
   LIST SYSMODS .
 /*
