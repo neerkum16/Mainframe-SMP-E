@@ -358,5 +358,275 @@
     "verified_on": null,
     "verified_by": null,
     "zos_release": null
+  },
+  {
+    "path": "labs/m03/jcl/M03L01-ALLOCLIB.jcl",
+    "kind": "jcl",
+    "member": "ALLOCLB3",
+    "lab": "M03-L01",
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m03/jcl/M03L01-BACKUP.jcl",
+    "kind": "jcl",
+    "member": "BACKUP3",
+    "lab": "M03-L01",
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m03/jcl/M03L01-LISTTZ.jcl",
+    "kind": "jcl",
+    "member": "LISTTZ",
+    "lab": "M03-L01",
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m03/jcl/M03L01-RESTORE.jcl",
+    "kind": "jcl",
+    "member": "RESTOR3",
+    "lab": "M03-L01",
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m03/jcl/M03L01-TZRUN.jcl",
+    "kind": "jcl",
+    "member": "TZRUN",
+    "lab": "M03-L01",
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m03/jcl/M03L02-JCLINDEM.jcl",
+    "kind": "jcl",
+    "member": "JCLINDEM",
+    "lab": "M03-L02",
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m03/jcl/M03L02-JCLRUN.jcl",
+    "kind": "jcl",
+    "member": "JCLRUN",
+    "lab": "M03-L02",
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m03/jcl/M03L02-UNDOJCL.jcl",
+    "kind": "jcl",
+    "member": "UNDOJCL",
+    "lab": "M03-L02",
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m03/jcl/M03L03-BLDOBJ.jcl",
+    "kind": "jcl",
+    "member": "BLDOBJ",
+    "lab": "M03-L03",
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m03/jcl/M03L03-RCVFUNC.jcl",
+    "kind": "jcl",
+    "member": "RCVFUNC",
+    "lab": "M03-L03",
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m03/jcl/M03L04-APPCHK.jcl",
+    "kind": "jcl",
+    "member": "APPCHK",
+    "lab": "M03-L04",
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m03/jcl/M03L04-APPLYFN.jcl",
+    "kind": "jcl",
+    "member": "APPLYFN",
+    "lab": "M03-L04",
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m03/jcl/M03L04-LISTAPP.jcl",
+    "kind": "jcl",
+    "member": "LISTAPP",
+    "lab": "M03-L04",
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m03/jcl/M03L05-APPPTF.jcl",
+    "kind": "jcl",
+    "member": "APPPTF",
+    "lab": "M03-L05",
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m03/jcl/M03L06-APPBASE.jcl",
+    "kind": "jcl",
+    "member": "APPBASE",
+    "lab": "M03-L06",
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m03/jcl/M03L06-REPAPPL.jcl",
+    "kind": "jcl",
+    "member": "REPAPPL",
+    "lab": "M03-L06",
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m03/jcl/M03L06-REPCHK.jcl",
+    "kind": "jcl",
+    "member": "REPCHK",
+    "lab": "M03-L06",
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m03/jcl/M03L07-RCVAPP.jcl",
+    "kind": "jcl",
+    "member": "RCVAPP",
+    "lab": "M03-L07",
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m03/jcl/M03L07-RERUN.jcl",
+    "kind": "jcl",
+    "member": "RERUN",
+    "lab": "M03-L07",
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m03/mcs/HXYZ121.mcs",
+    "kind": "mcs",
+    "member": "HXYZ121",
+    "lab": null,
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m03/mcs/JXYZ112.mcs",
+    "kind": "mcs",
+    "member": "JXYZ112",
+    "lab": null,
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m03/mcs/UA00010.mcs",
+    "kind": "mcs",
+    "member": "UA00010",
+    "lab": null,
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m03/mcs/UA00011.mcs",
+    "kind": "mcs",
+    "member": "UA00011",
+    "lab": null,
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m03/mcs/UA00012.mcs",
+    "kind": "mcs",
+    "member": "UA00012",
+    "lab": null,
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m03/uclin/M03L01-TZDDDEF.smpcntl",
+    "kind": "smpcntl",
+    "member": "TZDDDEF",
+    "lab": "M03-L01",
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "labs/m03/uclin/M03L07-FIXDD.smpcntl",
+    "kind": "smpcntl",
+    "member": "FIXDD",
+    "lab": "M03-L07",
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
+  },
+  {
+    "path": "rexx/SMPEJCLN.rexx",
+    "kind": "rexx",
+    "member": "SMPEJCLN",
+    "lab": null,
+    "verified": false,
+    "verified_on": null,
+    "verified_by": null,
+    "zos_release": null
   }
 ]

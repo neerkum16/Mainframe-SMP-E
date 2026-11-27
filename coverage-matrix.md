@@ -58,7 +58,42 @@ Labs: M02-L01 (Define the global zone entries), M02-L02 (Receive PTFs and assign
 
 ## Module 3: APPLY Processing
 
-Not yet built (30 sub-topics).
+Article: `articles/03-apply-processing.md` - status: draft - sources last verified: not yet
+
+| # | Curriculum sub-topic | Article section | Diagrams | Code files | Inline blocks |
+|---|---|---|---|---|---|
+| 1 | Product function & Installation methods | Product function & Installation methods | 1 | 1 | 0 |
+| 2 | Target Zone definition entry | Target Zone definition entry | 1 | 0 | 0 |
+| 3 | TZONE entry example | TZONE entry example | 0 | 1 | 0 |
+| 4 | Target Zone DDDEF entry | Target Zone DDDEF entry | 0 | 1 | 0 |
+| 5 | Target Zone DDDEF entry example | Target Zone DDDEF entry example | 0 | 2 | 0 |
+| 6 | MAC, SRC, and MOD element MCS | MAC, SRC, and MOD element MCS | 1 | 1 | 0 |
+| 7 | Data Element MCS | Data Element MCS | 0 | 0 | 0 |
+| 8 | Program Element MCS | Program Element MCS | 0 | 0 | 1 |
+| 9 | Identifying the target system structure | Identifying the target system structure | 1 | 0 | 0 |
+| 10 | How JCLIN processing works | How JCLIN processing works | 1 | 0 | 0 |
+| 11 | JCLIN processing example | JCLIN processing example | 0 | 2 | 0 |
+| 12 | JCLIN report example | JCLIN report example | 0 | 0 | 0 |
+| 13 | JCLIN - MAC and ASSEM entries | JCLIN - MAC and ASSEM entries | 1 | 0 | 0 |
+| 14 | JCLIN - MOD and LMOD entries | JCLIN - MOD and LMOD entries | 1 | 0 | 1 |
+| 15 | JCLIN - DLIB entries | JCLIN - DLIB entries | 0 | 0 | 1 |
+| 16 | Invoking JCLIN | Invoking JCLIN | 0 | 1 | 0 |
+| 17 | The save control dataset | The save control dataset | 1 | 0 | 0 |
+| 18 | Determining target libraries | Determining target libraries | 1 | 0 | 0 |
+| 19 | Apply processing | Apply processing | 1 | 0 | 0 |
+| 20 | Concatenating macro libraries for assemblies | Concatenating macro libraries for assemblies | 1 | 0 | 0 |
+| 21 | SYSLIB DDDEF example | SYSLIB DDDEF example | 0 | 0 | 1 |
+| 22 | The APPLY command | The APPLY command | 0 | 2 | 2 |
+| 23 | Target Zone SYSMOD entry example | Target Zone SYSMOD entry example | 0 | 1 | 0 |
+| 24 | Element service level | Element service level | 1 | 2 | 0 |
+| 25 | Target Zone MAC and SRC element entries | Target Zone MAC and SRC element entries | 0 | 0 | 0 |
+| 26 | Target Zone MOD and DATA element entries | Target Zone MOD and DATA element entries | 0 | 0 | 0 |
+| 27 | Base and dependent functions revisited | Base and dependent functions revisited | 1 | 1 | 0 |
+| 28 | Replacing an existing product | Replacing an existing product | 1 | 3 | 0 |
+| 29 | Sysmod installation via the SMP/E dialog | Sysmod installation via the SMP/E dialog | 1 | 0 | 0 |
+| 30 | SMP/E dialogs - sysmod management options | SMP/E dialogs - sysmod management options | 0 | 0 | 0 |
+
+Labs: M03-L01 (Define the target zone libraries and DDDEFs), M03-L02 (Run the JCLIN command on a sample stream), M03-L03 (Package and receive a function with JCLIN), M03-L04 (APPLY CHECK and APPLY the function), M03-L05 (Apply a PTF and read the element service level), M03-L06 (Apply a base function and replace it), M03-L07 (Diagnose SYSMODs that APPLY refuses), M03-L08 (Apply a SYSMOD with the SMP/E dialogs)
 
 ## Module 4: ACCEPT Processing
 

@@ -109,6 +109,7 @@ Body:
 | `SMPEJOB` | Module 1 | Build and submit a one-step GIMSMP job for a zone and command |
 | `SMPESCAN` | Module 1 | Scan SMPOUT for GIM messages, severity counts, highest return code |
 | `SMPEMCS` | Module 2 | Pre-check an MCS member: statement periods, 7-character IDs, `++VER` present |
+| `SMPEJCLN` | Module 3 | Pre-check JCLIN input (JCL or a `++JCLIN` section) and preview the ASSEM, MOD, LMOD and DLIB entries it is expected to create |
 | `SMPEHOLD` | Module 5 | Extract error and system holds from REPORT output |
 | `SMPEPREQ` | Module 5 | Summarize unresolved prerequisite and requisite conditions |
 

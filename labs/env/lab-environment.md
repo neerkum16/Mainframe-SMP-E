@@ -29,12 +29,17 @@ All labs use one shared environment, created by Module 1 lab M01-L01.
 | `SMPE.LAB.SMPCNTL` | PDS, FB 80 (`.smpcntl` members for UCLIN input) | `M02L01-ALLOCRF` |
 | `SMPE.LAB.HOLDDATA` | PDS, FB 80 (HOLDDATA members) | `M02L01-ALLOCRF` |
 | `SMPE.LAB.RELFILE.HXYZ120.F1` | PDS, FB 80 (relative file for function HXYZ120) | `M02L01-ALLOCRF` |
+| `SMPE.LAB.SXYZLOAD` | PDSE, RECFM U (target module library) | `M03L01-ALLOCLIB` |
+| `SMPE.LAB.SXYZDATA`, `SXYZDATX` | PDSE, FB 80 (target data libraries; `SXYZDATX` has no DDDEF until M03-L07) | `M03L01-ALLOCLIB` |
+| `SMPE.LAB.AXYZMOD`, `AXYZDATA` | PDSE, FB 80 (distribution libraries) | `M03L01-ALLOCLIB` |
+| `SMPE.LAB.XYZOBJ` | PDS, FB 80 (object text read through `TXLIB`) | `M03L01-ALLOCLIB` |
+| `SMPE.LAB.*.BKUP` | Backup copies of the CSI, `SMPSCDS`, `SMPPTS` and four target libraries | `M03L01-BACKUP` |
 | `SMPE.LAB.SMPTLIB*` | Created by SMP/E at RECEIVE (prefix set by OPTIONS `DSPREFIX`) | SMP/E |
 | `SMPE.LAB.SMPLOG`, `SMPLOGA` | Sequential | Allocate to site standards (not created by the lab jobs) |
 
 ## Zones and DDDEFs
 
-Zones are defined by `labs/m01/uclin/M01L01-ZONES.smpcntl`. DDDEFs are added by `labs/m01/jcl/M01L01-DDDEFS.jcl`. Work-file DDDEFs (`SMPWRK1` to `SMPWRK6`, `SYSUT1` to `SYSUT4`) are added in Module 2 by `labs/m02/uclin/M02L01-WORKDD.smpcntl`; they are needed before any RECEIVE, APPLY or ACCEPT job runs.
+Zones are defined by `labs/m01/uclin/M01L01-ZONES.smpcntl`. DDDEFs are added by `labs/m01/jcl/M01L01-DDDEFS.jcl`. Work-file DDDEFs (`SMPWRK1` to `SMPWRK6`, `SYSUT1` to `SYSUT4`) are added in Module 2 by `labs/m02/uclin/M02L01-WORKDD.smpcntl`; they are needed before any RECEIVE, APPLY or ACCEPT job runs. Target zone DDDEFs for Module 3 (libraries, `SMPLTS`, `MACLIB`, `MODGEN` and the `SYSLIB` concatenation) are added by `labs/m03/uclin/M03L01-TZDDDEF.smpcntl`; `SXYZDATX` is intentionally left without a DDDEF for M03-L07.
 
 ## Shared procedure
 
